@@ -23,6 +23,8 @@ export default async function DashboardPage() {
 		);
 
 	const projects: Project[] = await getUserProjects(session?.user?.email);
+	console.log(projects);
+
 	if (!projects.find((proj) => proj.name === 'Bujnicka-Dent'))
 		return (
 			<main>
