@@ -4,8 +4,12 @@ import { db, createClient } from '@vercel/postgres';
 export const getUserProjects = async (
 	userEmail: string
 ): Promise<Project[]> => {
+	console.log('userEmail', userEmail);
+
 	const query = process.env.SQL_GET_USERPPROJECTS as string;
 	const params = [userEmail];
+
+	console.log('query', query);
 
 	let projects: Project[] = [];
 
