@@ -1,0 +1,22 @@
+.button {
+	color: black;
+	font-weight: 500;
+	background-color: #fff;
+	padding: 0.5rem 1rem;
+	border-radius: 7px;
+	transition: .2s ease-out;
+	font-size: 4vw;
+	
+	&:hover {
+		transform: scale(110%);
+		background-color: #ccc;
+	}
+	
+	@media all and (min-width: 650px) {
+		font-size: 1rem;
+	}
+}
+
+span.link {
+	cursor: pointer;
+}
