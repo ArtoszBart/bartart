@@ -16,10 +16,10 @@ export default async function AuthComponent() {
 				<div className='menu'>
 					<a
 						className={`button ${robotoMono.className}`}
-						href='/download'
+						href='/downloads'
 						rel='noopener noreferrer'
 					>
-						Download
+						Downloads
 					</a>
 					<LogOutButton />
 				</div>

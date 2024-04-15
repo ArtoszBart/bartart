@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
-import { Montserrat } from 'next/font/google';
+import { Montserrat, Roboto_Mono } from 'next/font/google';
 import '../styles/main.scss';
 import AuthComponent from '@/components/auth/AuthComponent';
 
 const montserrat = Montserrat({ subsets: ['latin'] });
+const robotoMono = Roboto_Mono({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
 	title: 'Bart Art',
@@ -17,7 +18,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body>
+			<body className={robotoMono.className}>
 				<header>
 					<a href='/'>
 						<div className={`logo ${montserrat.className}`}>

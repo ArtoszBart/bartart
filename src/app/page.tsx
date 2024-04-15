@@ -1,15 +1,11 @@
-import { Roboto_Mono } from 'next/font/google';
-import localFont from 'next/font/local';
 import { FaPhone, FaEnvelope } from 'react-icons/fa6';
+import localFont from 'next/font/local';
 
-// Font files can be colocated inside of `pages`
 const leoscar = localFont({ src: '../assets/fonts/leoscar.ttf' });
-
-const robotoMono = Roboto_Mono({ subsets: ['latin'] });
 
 export default function Home() {
 	return (
-		<main className={robotoMono.className}>
+		<main>
 			<div className='background-video'>
 				<video
 					preload='none'

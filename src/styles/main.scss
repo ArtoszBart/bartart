@@ -51,6 +51,21 @@ body {
 	background-color: #151515;
 }
 
+.blob-list {
+	width: 80%;
+	max-width: 800px;
+
+	.blob {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 1rem;
+		border-bottom: 1px solid #777;
+		padding-block: 1rem;
+	}
+}
+
+
 .background-video {
 	position: absolute;
 	top: 0;
